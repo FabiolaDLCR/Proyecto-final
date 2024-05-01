@@ -1,0 +1,21 @@
+main{
+    margin: 10px 55px 10px 55px;
+    padding-top: 35px;
+    img{
+        height: 580px;
+    }
+}
+.responsive-carousel{
+    display: none;
+}
+
+@media(max-width: 768px){
+    main{
+        display: none;
+    }  
+    .responsive-carousel{
+        display: contents;
+        margin: 15px;
+        z-index: 1;
+       }
+}
