@@ -130,4 +130,80 @@ main img {
     margin: 15px;
     z-index: 1;
   }
+}
+.accesorios {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  padding-top: 35px;
+}
+.accesorios img {
+  width: 250px;
+  height: 250px;
+  display: flexbox;
+  border-radius: 10px;
+}
+.accesorios .box {
+  width: 300px;
+  text-align: center;
+  font-size: 12px;
+  margin: 15px;
+}
+
+.accesorios :hover img {
+  transform: scale(0.8);
+}
+
+@keyframes descuento {
+  0% {
+    color: #59580c;
+    background-color: #e9e5cd;
+  }
+  50% {
+    color: #97a258;
+    background-color: #e9e5cd;
+  }
+  100% {
+    color: #e9e5cd;
+    background-color: #59580c;
+  }
+}
+.primera-compra {
+  margin: 35px;
+  border-radius: 20px;
+}
+.primera-compra p {
+  text-align: center;
+  font-family: "lucida sans";
+  color: #59580c;
+  animation-name: descuento;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+}
+
+.despensa {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  padding-top: 35px;
+}
+.despensa img {
+  width: 250px;
+  height: 250px;
+  display: flexbox;
+  border-radius: 10px;
+}
+.despensa .alimentos {
+  width: 300px;
+  text-align: center;
+  font-size: 12px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.despensa :hover img {
+  transform: scale(0.8);
 }/*# sourceMappingURL=style.css.map */

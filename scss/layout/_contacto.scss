@@ -1,0 +1,22 @@
+$color-1: #59580c;
+$color-2: #97a258;
+$color-3:#e9e5cd;
+$fuente-titulos:'lucida sans regular';
+$fuente-texto:'lucida sans';
+
+.ubicacion{
+    display: flex;
+    h3{
+        font-size: 12px;
+        font-family: $fuente-texto;
+        padding-top: 95px;
+        text-align: left;
+        margin: 20px;
+    }
+}
+iframe{
+    margin: 20px;
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+}
