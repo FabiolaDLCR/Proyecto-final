@@ -1,0 +1,39 @@
+$color-1: #59580c;
+$color-2: #97a258;
+$color-3:#e9e5cd;
+$fuente-titulos:'lucida sans regular';
+$fuente-texto:'lucida sans';
+
+footer{
+    width: 100%;
+    justify-content: center;
+    margin-top: 35px;
+    h2{
+        color: $color-1;
+        font-family: $fuente-titulos;
+        font-size: small;
+        font-weight: bold;
+    }
+    img{
+        width: 25px;
+        height: 25px;
+    }
+    p{
+        justify-content: center;
+        font-family: $fuente-texto;
+        font-size: smaller;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%
+    }
+    .footer-box{
+        display: flexbox;
+        margin: 20px;
+        text-align: center;
+        align-items: baseline;
+        flex-wrap: wrap;  
+    }
+}
