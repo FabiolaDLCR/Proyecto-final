@@ -1,9 +1,16 @@
-$color-1: #59580c;
-$color-2: #97a258;
+$color-1: #41622d;
+$color-2: #84a173;
 $color-3:#e9e5cd;
 $fuente-titulos:'lucida sans regular';
 $fuente-texto:'lucida sans';
 
+.contacto{
+    h2{
+        justify-content: center;
+        text-align: center;
+        color: $color-1;
+    }
+}
 .ubicacion{
     display: flex;
     h3{
@@ -18,5 +25,5 @@ iframe{
     margin: 20px;
     width: 220px;
     height: 220px;
-    border-radius: 10px;
+    border-radius: 20px;
 }

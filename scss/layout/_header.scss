@@ -1,16 +1,17 @@
-$color-1: #59580c;
-$color-2: #97a258;
+$color-1: #41622d;
+$color-2: #84a173;
 $color-3:#e9e5cd;
 $fuente-titulos:'lucida sans regular';
 $fuente-texto:'lucida sans';
 
-
 header {
     display:flex;
-    justify-content: space-between;
     height: 70px;
     padding: 40px;
-    align-items: center;
+    align-items:center;
+    justify-content: space-between;
+
+    
       nav{
         ul{
         display: flex;
@@ -20,6 +21,7 @@ header {
         margin: 10px;
         a{
             text-decoration: none;
+            padding: 12px;
             color: $color-1;
             font-family: $fuente-titulos
         }
@@ -28,11 +30,13 @@ header {
       }
     .logo{
         img{
+            justify-content: left;
             flex: auto;
             width: 180px;
             height: 70px;  
            }
     }
+
     .labe_hamburguesa{
         display: none;
     }
@@ -43,6 +47,12 @@ header {
         display: none;
     }
 .menu1{
+    .menu-tienda{
+        button{
+            background-color: #41622d;
+            color: #e9e5cd;
+        }
+    }
     a:hover{
         background-color: $color-1;
         color: $color-3;

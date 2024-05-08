@@ -7,10 +7,10 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
   height: 70px;
   padding: 40px;
   align-items: center;
+  justify-content: space-between;
 }
 header nav ul {
   display: flex;
@@ -22,10 +22,12 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #59580c;
+  padding: 12px;
+  color: #41622d;
   font-family: "lucida sans regular";
 }
 header .logo img {
+  justify-content: left;
   flex: auto;
   width: 180px;
   height: 70px;
@@ -39,8 +41,12 @@ header .menu-ham {
 header .responsive-carousel {
   display: none;
 }
+header .menu1 .menu-tienda button {
+  background-color: #41622d;
+  color: #e9e5cd;
+}
 header .menu1 a:hover {
-  background-color: #59580c;
+  background-color: #41622d;
   color: #e9e5cd;
   border-radius: 25px;
 }
@@ -81,7 +87,7 @@ footer {
   margin-top: 35px;
 }
 footer h2 {
-  color: #59580c;
+  color: #84a173;
   font-family: "lucida sans regular";
   font-size: small;
   font-weight: bold;
@@ -157,16 +163,16 @@ main img {
 
 @keyframes descuento {
   0% {
-    color: #59580c;
+    color: #41622d;
     background-color: #e9e5cd;
   }
   50% {
-    color: #97a258;
+    color: #84a173;
     background-color: #e9e5cd;
   }
   100% {
     color: #e9e5cd;
-    background-color: #59580c;
+    background-color: #41622d;
   }
 }
 .primera-compra {
@@ -176,7 +182,7 @@ main img {
 .primera-compra p {
   text-align: center;
   font-family: "lucida sans";
-  color: #59580c;
+  color: #41622d;
   animation-name: descuento;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -213,7 +219,7 @@ main img {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
   text-align: center;
-  color: #5B6E52;
+  color: #41622d;
 }
 .nosotros .grid-nosotros {
   display: grid;
@@ -228,6 +234,7 @@ main img {
 .nosotros .grid-nosotros .grid-item-1 img {
   height: 320px;
   width: 320px;
+  border-radius: 20px;
 }
 .nosotros .grid-nosotros .grid-item-2 {
   grid-column: 2/3;
@@ -258,4 +265,67 @@ main img {
 .nosotros .grid-nosotros .grid-item-4 img {
   width: 320px;
   height: 320px;
+  border-radius: 20px;
+}
+
+.carousel-nosotros {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  main {
+    display: none;
+  }
+  .carousel-nosotros {
+    display: contents;
+    margin: 15px;
+    z-index: 1;
+  }
+}
+.contacto h2 {
+  justify-content: center;
+  text-align: center;
+  color: #41622d;
+}
+
+.ubicacion {
+  display: flex;
+}
+.ubicacion h3 {
+  font-size: 12px;
+  font-family: "lucida sans";
+  padding-top: 95px;
+  text-align: left;
+  margin: 20px;
+}
+
+iframe {
+  margin: 20px;
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+}
+
+.cuidado-personal {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  padding-top: 35px;
+}
+.cuidado-personal img {
+  width: 250px;
+  height: 250px;
+  display: flexbox;
+  border-radius: 10px;
+}
+.cuidado-personal .box {
+  width: 300px;
+  text-align: center;
+  font-size: 12px;
+  margin: 15px;
+}
+
+.cuidado-personal :hover img {
+  transform: scale(0.8);
 }/*# sourceMappingURL=style.css.map */

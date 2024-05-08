@@ -1,5 +1,5 @@
-$color-1: #59580c;
-$color-2: #97a258;
+$color-1: #41622d;
+$color-2: #84a173;
 $color-3:#e9e5cd;
 $fuente-titulos:'lucida sans regular';
 $fuente-texto:'lucida sans';
@@ -57,6 +57,7 @@ $fuente-texto:'lucida sans';
     animation-duration: 5s;
     }
 }
+
 .despensa{
     @include contenedor-productos;
     img{
